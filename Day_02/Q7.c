@@ -5,6 +5,7 @@
 // Concept Used- Use of Functions and Use of while loop
 
 #include <stdio.h>
+long long productOfDigits(int n);
 
 int main() 
 {
@@ -32,6 +33,6 @@ long long productOfDigits(int n) {     // For handling large products, we use lo
         product *= digit;     // Multiply digit to product
         n /= 10;              // Remove last digit
     }
-    
+
     return product;
 }

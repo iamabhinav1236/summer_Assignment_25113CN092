@@ -6,6 +6,8 @@
 // Concept Used- Use of Functions and Use of while loop 
 
 #include <stdio.h>
+int sumOfDigits(int n);
+
 int main() 
 {
     int num;

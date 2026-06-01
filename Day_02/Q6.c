@@ -5,6 +5,7 @@
 // Concept Used- Use of Functions and Use of while loop
 
 #include <stdio.h>
+long long reverseNumber(int n);
 
 int main() 
 {
@@ -37,7 +38,7 @@ long long reverseNumber(int n) {   // For handling large reversed numbers, we us
     }
 
     // Return negative if original number was negative 
-    
+
     return isNegative ? -reversed : reversed;       // use of ternary operator for returning the final reversed number.
    
 }
