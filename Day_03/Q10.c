@@ -18,7 +18,7 @@ int main()
     printf("Prime numbers in the range %d to %d are: ", begin, end);
     for (int i = begin; i <= end; i++)          // Loop for range from begin to end
     {
-        if (isPrime(i)) 
+        if (isPrime(i))             // Check if the number is prime using the isPrime function
         {
             printf("%d ", i);
         }
@@ -27,15 +27,15 @@ int main()
     return 0;
 }
 
-int isPrime(int n) 
+int isPrime(int n)              // Function to check if a number is prime or not
 {
-    if (n <= 1) 
+    if (n <= 1)                 // For numbers less than or equal to 1, return 0 (not prime)
     {
         return 0;
     }
-    for (int i = 2; i * i <= n; i++) 
+    for (int i = 2; i * i <= n; i++)        // Check for divisibility from 2 up to the square root of n
     {
-        if (n % i == 0) 
+        if (n % i == 0)                 // If n is divisible by any number from 2 to square root of n, it is not prime
         {
             return 0;
         }
