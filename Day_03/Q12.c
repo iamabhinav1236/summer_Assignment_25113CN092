@@ -19,13 +19,16 @@ int main()
     return 0;
 }
 
-int gcd(int a, int b) {
-    if (b == 0) {
+int gcd(int a, int b)           // Function to calculate GCD using the Euclidean algorithm
+{
+    if (b == 0) 
+    {
         return a;
     }
-    return gcd(b, a % b);
+    return gcd(b, a % b);       // Recursive call to gcd with b and the remainder of a divided by b
 }
 
-int lcm(int a, int b) {
-    return (a * b) / gcd(a, b);
+int lcm(int a, int b)              // Function to calculate LCM using the relationship between GCD and LCM 
+{
+    return (a * b) / gcd(a, b);     // LCM is calculated using the formula: LCM(a, b) = (a * b) / GCD(a, b) (Learnt from AI)
 }

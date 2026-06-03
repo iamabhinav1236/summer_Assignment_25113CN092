@@ -16,10 +16,10 @@ int main()
     return 0;
 }
 
-int gcd(int a, int b) {
-    if (b == 0) 
+int gcd(int a, int b) {    
+    if (b == 0)                 // if b is 0, GCD is and we return it
     {
         return a;
     }
-    return gcd(b, a % b);
+    return gcd(b, a % b);          // Recursive call to gcd with b and the remainder of a divided by b
 }

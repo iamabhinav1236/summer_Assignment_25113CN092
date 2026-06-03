@@ -11,12 +11,12 @@ int isPrime(int n);
 
 int main() 
 {
-    int begin, end;
+    int begin, end;    
     printf("Enter the range (begin and end): ");
     scanf("%d %d", &begin, &end);
 
     printf("Prime numbers in the range %d to %d are: ", begin, end);
-    for (int i = begin; i <= end; i++) 
+    for (int i = begin; i <= end; i++)          // Loop for range from begin to end
     {
         if (isPrime(i)) 
         {
@@ -29,11 +29,14 @@ int main()
 
 int isPrime(int n) 
 {
-    if (n <= 1) {
+    if (n <= 1) 
+    {
         return 0;
     }
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
+    for (int i = 2; i * i <= n; i++) 
+    {
+        if (n % i == 0) 
+        {
             return 0;
         }
     }

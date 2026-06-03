@@ -7,15 +7,17 @@
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int a, b;
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
 
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
+    while (b != 0)          // Loop until b becomes 0
+    {        
+        int temp = b;       // Store the value of b in a temporary variable
+        b = a % b;          // Update b to be the remainder of a divided by b
+        a = temp;           // Update a to be the previous value of b
     }
 
     printf("GCD = %d\n", a);
