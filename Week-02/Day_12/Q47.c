@@ -1,5 +1,5 @@
 // Write a program to Write function for Fibonacci. 
-// ALREADY DONE (Q.No.-15)
+// ALREADY DONE (Q.No.-13)
 
 // Generating Fibonacci series.
 // Approach Used- The Fibonacci series is a series of numbers where each number is the sum of the two preceding one. 
