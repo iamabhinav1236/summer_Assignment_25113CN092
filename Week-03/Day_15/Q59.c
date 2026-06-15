@@ -1,14 +1,51 @@
 // Write a program to Rotate array right.
 
-//
-//
-//
+// Approach Used- Using the functions to reverse the section of a array and then rotating it right side by d position
+// Difficulty Level- Medium
+// Concept Used- Use of loops, functions and Arrays
 
 #include <stdio.h>
 
-// Helper function to reverse a section of the array in place
-void reverse(int arr[], int start, int end) {
-    while (start < end) {
+void reverse(int arr[], int start, int end);
+void rotateR(int arr[], int n, int k);
+void printA(int arr[], int n);
+
+int main() 
+{
+    int x,i,d;                // Initialize variables
+    
+    printf("Enter the size of the array: ");
+    scanf("%d", &x);
+    
+    int arr[x];             // Initalize size of array
+  
+    printf("Enter the elements:\n" , x);
+
+    for (i = 0; i < x; i++)                 // for loop for taking input of numbers for Array
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+    
+    printf("Enter the value by which the array you want to rotate:\n" , x);
+    scanf("%d", &d);                              // Number of positions to rotate left
+
+    printf("Original Array: ");
+    printA(arr, n);                         // Calling function
+
+    rotateR(arr, n, d);                     // Calling function
+
+    printf("Array after rotating right by %d positions: ", d);
+    printA(arr, n);                         // Calling function
+
+    return 0;
+}
+
+void reverse(int arr[], int start, int end)                      // Function to reverse a section of the array
+{
+    while (start < end) 
+    {
         int temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp;
@@ -17,44 +54,21 @@ void reverse(int arr[], int start, int end) {
     }
 }
 
-// Function to right-rotate the array by k positions
-void rotateRight(int arr[], int n, int k) {
-    // Handle cases where k is greater than the array size
-    k = k % n;
-    
-    // If k is 0, no rotation is needed
-    if (k == 0) return;
+void rotateR(int arr[], int n, int k)                   // Function to right rotate the array by k positions
+{
+    k = k % n;                      // if d is greater than the size of array
 
-    // 1. Reverse the entire array
+    if (k == 0) return;
     reverse(arr, 0, n - 1);
-    
-    // 2. Reverse the first k elements
     reverse(arr, 0, k - 1);
-    
-    // 3. Reverse the remaining n - k elements
     reverse(arr, k, n - 1);
 }
 
-// Helper function to print the array
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
+void printA(int arr[], int n)                   // Function to print the array
+{
+    for (int i = 0; i < n; i++) 
+    {
         printf("%d ", arr[i]);
     }
     printf("\n");
-}
-
-int main() {
-    int arr[] = {1, 2, 3, 4, 5, 6, 7};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int k = 3; // Number of times to rotate right
-
-    printf("Original Array: ");
-    printArray(arr, n);
-
-    rotateRight(arr, n, k);
-
-    printf("Array after rotating right by %d positions: ", k);
-    printArray(arr, n);
-
-    return 0;
 }
