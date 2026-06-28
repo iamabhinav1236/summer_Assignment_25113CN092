@@ -1,52 +1,43 @@
 // Write a program to Merge arrays. 
 
-//
-//
-//
+// Approach Used- Simply taking the arrays as input and then merging them into merged array by for loop
+// Difficulty Level- Easy
+// Concept Used- Use of loops and arrays 
 
 #include <stdio.h>
 
-int main() {
-    int n1, n2, n3;
-
-    // 1. Get the size and elements of the first array
-    printf("Enter the number of elements in the first array: ");
-    scanf("%d", &n1);
-    int arr1[n1];
+int main() 
+{
+    int arr1[50], arr2[50], merged[100];
+    int size1, size2, i, k = 0;
     
-    printf("Enter %d elements: ", n1);
-    for (int i = 0; i < n1; i++) {
+    printf("Enter size of first array: ");              // Input for the first array
+    scanf("%d", &size1);
+
+    printf("Enter elements of first array: ");
+
+    for(i = 0; i < size1; i++) 
+    {
         scanf("%d", &arr1[i]);
+        merged[k++] = arr1[i];
     }
 
-    // 2. Get the size and elements of the second array
-    printf("Enter the number of elements in the second array: ");
-    scanf("%d", &n2);
-    int arr2[n2];
     
-    printf("Enter %d elements: ", n2);
-    for (int i = 0; i < n2; i++) {
+    printf("Enter size of second array: ");                     // Input for the second array
+    scanf("%d", &size2);
+    printf("Enter elements of second array: ");
+    for(i = 0; i < size2; i++) 
+    {
         scanf("%d", &arr2[i]);
+        merged[k++] = arr2[i];
     }
 
-    // 3. Define the third array with the combined size
-    n3 = n1 + n2;
-    int mergedArr[n3];
+    
+    printf("The merged array is: ");                            // Output the merged array
 
-    // 4. Copy elements from the first array
-    for (int i = 0; i < n1; i++) {
-        mergedArr[i] = arr1[i];
-    }
-
-    // 5. Append elements from the second array
-    for (int i = 0; i < n2; i++) {
-        mergedArr[n1 + i] = arr2[i];
-    }
-
-    // 6. Print the finalized merged array
-    printf("\nThe merged array is:\n");
-    for (int i = 0; i < n3; i++) {
-        printf("%d ", mergedArr[i]);
+    for(i = 0; i < k; i++) 
+    {
+        printf("%d ", merged[i]);
     }
     printf("\n");
 
