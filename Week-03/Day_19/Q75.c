@@ -2,7 +2,7 @@
 
 // Approach Used- Transpose means converting rows into columns and columns into rows
 // Difficulty Level- Easy
-// Concept Used- use of functions, loops, if-else conditions and arrays.
+// Concept Used- Use of functions, loops, if-else conditions and arrays.
 
 #include <stdio.h>
 void transposeMatrix(int rows, int cols, int mat[rows][cols], int result[cols][rows]);
@@ -20,7 +20,7 @@ int main()
     int mat[rows][cols], result[cols][rows];     // Initialize matrices
   
     printf("Enter elements of the matrix:\n");
-    
+
     for (i = 0; i < rows; i++) 
     {
         for (j = 0; j < cols; j++) 

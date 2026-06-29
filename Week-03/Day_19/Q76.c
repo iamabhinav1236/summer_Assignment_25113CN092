@@ -2,7 +2,7 @@
 
 // Approach Used- Calculating the sum by adding the diagonal elements (or elements having same ith position) of the matrices
 // Difficulty Level- Easy
-// Concept Used- use of functions, loops, if-else conditions and arrays.
+// Concept Used- Use of functions, loops, if-else conditions and arrays.
 
 #include <stdio.h>
 int diagonalSum(int size, int mat[size][size]);
@@ -36,7 +36,7 @@ int main()
 int diagonalSum(int size, int mat[size][size]) 
 {
     int i, sum = 0;
-    
+
     for (i = 0; i < size; i++) 
     {
         sum += mat[i][i];                    // Adding elements where row index = column index
