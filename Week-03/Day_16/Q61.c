@@ -8,8 +8,8 @@
 int find(int arr[], int size);
 
 
-int main() {
-    
+int main() 
+{
     int n,i;                // Initialize variables
     
     printf("Enter the size of the array: ");
