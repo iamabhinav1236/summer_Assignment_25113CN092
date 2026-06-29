@@ -7,7 +7,6 @@
 #include <stdio.h>
 void findPair(int arr[], int size, int targetSum);                  // Function Declaration
 
-
 int main() 
 {
     int n,i,targetsum;                // Initialize variables

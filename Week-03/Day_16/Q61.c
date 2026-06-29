@@ -7,7 +7,6 @@
 #include <stdio.h>
 int find(int arr[], int size);
 
-
 int main() 
 {
     int n,i;                // Initialize variables

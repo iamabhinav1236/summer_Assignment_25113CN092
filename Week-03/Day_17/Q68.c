@@ -5,43 +5,9 @@
 // Concept Used- Use of loops, arrays and functions
 
 #include <stdio.h>
+
 int isDuplicate(int element, int res[], int size);              // function declaration
 int findcommon(int arr1[], int size1, int arr2[], int size2, int result[]);              // function declaration
-
-int isDuplicate(int element, int res[], int size)               // function to check if element is already in result array
-{
-    for (int i = 0; i < size; i++) 
-    {
-        if (res[i] == element) 
-        {
-            return 1;               // Found duplicate
-        }
-    }
-    return 0;                 // Unique element
-}
-
-
-int findcommon(int arr1[], int size1, int arr2[], int size2, int result[])              // Function to find the intersection of two arrays
-{
-    int k = 0;               // Initilize k=0 
-    
-    for (int i = 0; i < size1; i++)                // Compare every element of the first array with the second array
-    {
-        for (int j = 0; j < size2; j++) 
-        {
-            if (arr1[i] == arr2[j]) 
-            {
-                if (!isDuplicate(arr1[i], result, k)) 
-                {
-                    result[k] = arr1[i];
-                    k++;
-                }
-                break;               // Break from inner loop when match found
-            }
-        }
-    }
-    return k;                   // Return total number of intersected elements
-}
 
 int main() 
 {
@@ -101,4 +67,38 @@ int main()
     printf("\n");
 
     return 0;
+}
+
+int isDuplicate(int element, int res[], int size)               // function to check if element is already in result array
+{
+    for (int i = 0; i < size; i++) 
+    {
+        if (res[i] == element) 
+        {
+            return 1;               // Found duplicate
+        }
+    }
+    return 0;                 // Unique element
+}
+
+int findcommon(int arr1[], int size1, int arr2[], int size2, int result[])              // Function to find the intersection of two arrays
+{
+    int k = 0;               // Initilize k=0 
+    
+    for (int i = 0; i < size1; i++)                // Compare every element of the first array with the second array
+    {
+        for (int j = 0; j < size2; j++) 
+        {
+            if (arr1[i] == arr2[j]) 
+            {
+                if (!isDuplicate(arr1[i], result, k)) 
+                {
+                    result[k] = arr1[i];
+                    k++;
+                }
+                break;               // Break from inner loop when match found
+            }
+        }
+    }
+    return k;                   // Return total number of intersected elements
 }

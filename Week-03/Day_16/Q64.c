@@ -4,7 +4,6 @@
 // Difficulty Level- Hard
 // Concept Used- Nested Loops and Array
 
-
 #include <stdio.h>
 int remove(int arr[], int size);              // Function Declaration
 
