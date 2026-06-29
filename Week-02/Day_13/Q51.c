@@ -1,6 +1,5 @@
 // Write a program to Find largest and smallest element. 
 
-
 // Approach Used- Taking input from User then using the function(large) and finding the Max & Min.
 // Difficulty Level- Easy
 // Concept Used- Use of Array, Functions and for loop
