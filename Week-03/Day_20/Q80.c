@@ -2,7 +2,7 @@
 
 // Approach Used- Calculate the sum of each column by iterating through all rows of that column
 // Difficulty Level- Easy
-// Concept Used- use of functions, loops, if-else conditions and arrays.
+// Concept Used- Use of functions, loops, if-else conditions and arrays.
 
 #include <stdio.h>
 void columnWiseSum(int rows, int cols, int mat[rows][cols]);
