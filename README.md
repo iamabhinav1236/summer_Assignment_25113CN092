@@ -3,18 +3,18 @@ Summer Assignments of GL Bajaj
 
 A collection of C assignments, programs, and coding practice.
 
-📚 About
+📚 About<br>
 This repository contains all the C programs and assignments completed during the Summer Holiday session, including logic-building exercises and fundamental programming concepts.
 
-💻 Topics Covered
+💻 Topics Covered<br>
 ✔️ Basic C++ Programs <br>
-✔️ Input / Output
-✔️ Loops & Conditions
-✔️ Number Programs
-✔️ Sum of N Numbers
-✔️ Factorial Programs
-✔️ Multiplication Tables
-✔️ Count Digits
-✔️ Pattern Programs
-✔️ Logic Building Exercises
+✔️ Input / Output<br>
+✔️ Loops & Conditions<br>
+✔️ Number Programs<br>
+✔️ Sum of N Numbers<br>
+✔️ Factorial Programs<br>
+✔️ Multiplication Tables<br>
+✔️ Count Digits<br>
+✔️ Pattern Programs<br>
+✔️ Logic Building Exercises<br>
 
