@@ -2,7 +2,7 @@
 
 // Approach Used - Store contact details (ID, name, phone number) in an array of structures, and provide menu options to add, display, and search contacts.
 // Difficulty Level - Tough
-// Concept Used - Use of structures, functions, loops, if-else conditions, arrays, and basic input/output
+// Concept Used - Use of structures, functions, loops, if-else conditions, and arrays
 
 #include <stdio.h>
 #include <string.h>

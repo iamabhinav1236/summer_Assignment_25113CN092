@@ -2,7 +2,7 @@
 
 // Approach Used - Store account details (account number, name, balance) in a structure, and provide menu options to add account, deposit, withdraw, display, and search.
 // Difficulty Level - Tough
-// Concept Used - Use of structures, functions, loops, if-else conditions, arrays, and basic input/output
+// Concept Used - Use of structures, functions, loops, if-else conditions, and arrays
 
 #include <stdio.h>
 #include <string.h>

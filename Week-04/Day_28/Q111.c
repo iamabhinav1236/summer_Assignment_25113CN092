@@ -2,7 +2,7 @@
 
 // Approach Used - Store ticket details (ID, passenger name, destination) in an array of structures, and provide menu options to book ticket, display tickets, and search tickets.
 // Difficulty Level - Tough
-// Concept Used - Use of structures, functions, loops, if-else conditions, arrays, and basic input/output
+// Concept Used - Use of structures, functions, loops, if-else conditions, and arrays
 
 #include <stdio.h>
 #include <string.h>
