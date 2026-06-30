@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-char maxOccurringChar(char str[]);
+char maxOccurringChar(char str[]);                   // Function Declaration
 
 int main() 
 {
@@ -29,7 +29,7 @@ int main()
     return 0;
 }
 
-char maxOccurringChar(char str[]) 
+char maxOccurringChar(char str[])                   // Function Definition
 {
     int freq[256] = {0};              // Frequency array for all ASCII characters
     int i = 0, maxFreq = 0;
