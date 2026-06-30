@@ -3,7 +3,7 @@
 // Approach Used - Provide a menu with options (Addition, Subtraction, Multiplication, Division), 
 // and perform operations based on user choice using functions and conditions.
 // Difficulty Level - Easy
-// Concept Used - Use of functions, loops, if-else conditions, switch-case, and basic input/output
+// Concept Used - Use of functions, loops, if-else conditions, and switch-case
 
 #include <stdio.h>
 
