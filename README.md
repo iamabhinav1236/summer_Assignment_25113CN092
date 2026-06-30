@@ -7,7 +7,7 @@ A collection of C assignments, programs, and coding practice.
 This repository contains all the C programs and assignments completed during the Summer Holiday session, including logic-building exercises and fundamental programming concepts.
 
 💻 Topics Covered
-✔️ Basic C++ Programs
+✔️ Basic C++ Programs <br>
 ✔️ Input / Output
 ✔️ Loops & Conditions
 ✔️ Number Programs
